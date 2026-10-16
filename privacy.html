@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy Policy | Quantum CZ Research Sync</title><style>body{font:18px/1.7 system-ui,sans-serif;color:#172a37;background:#f5f7f8;margin:0}main{max-width:760px;margin:48px auto;padding:32px}h1{line-height:1.2}a{color:#126257}nav{display:flex;gap:24px;flex-wrap:wrap}aside{border-left:4px solid #bb7b16;padding:12px;background:#fff4de}footer{margin-top:48px;font-size:14px}</style></head>
+<body><main>
+<nav aria-label="Main navigation"><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
+<aside>This website describes the intended workflow. The deployed OAuth grants, Ubuntu configuration, institutional permissions, and separate ChatGPT connection have not been independently verified by this website review.</aside>
+<h1>Privacy Policy</h1>
+<p>Effective date: 17 October 2026. This policy describes the intended workflow and required handling of data; it does not certify the deployed configuration.</p>
+<h2>Operator and scope</h2>
+<p>RatisWu operates Quantum CZ Research Sync for an authorized personal research workflow. Contact: <a href="mailto:porkface0301@gmail.com">porkface0301@gmail.com</a>. This policy describes the utility and its informational website. Institution-managed storage and any separately connected ChatGPT service also have their own policies.</p>
+<h2>Google data access and purpose</h2>
+<p>The intended OAuth scope is <code>https://www.googleapis.com/auth/drive.file</code>. Google defines it as per-file access to files created by the app or specifically made available to it. This rclone workflow does not implement a Google Picker file-selection interface; rclone normally sees only files and folders it creates. It does not receive unrestricted access to the account's Drive.</p>
+<p>rclone processes approved source file contents and necessary metadata, such as file names, sizes, timestamps, and destination information, to transfer research summaries from Ubuntu to institution-managed Google Drive and check transfer results. Within accessible files, the scope permits reading and modification, including deletion when the command and account permissions allow it. Approval of source documents is a procedural control, not an OAuth content filter.</p>
+<h2>Storage and protection</h2>
+<p>Source documents and rclone OAuth credentials are held in the operator-managed Ubuntu environment. Depending on logging settings, local logs may contain paths, file names, status details, or errors. Uploaded documents and metadata are stored in the destination Google Drive and are subject to institutional access, retention, and administration policies.</p>
+<p>The operator is responsible for restricting access to local credentials and logs. Credentials must not be placed in this public website or its source repository. This policy does not assert that the Ubuntu configuration is encrypted or that a particular retention schedule has been implemented.</p>
+<h2>Sharing and separate services</h2>
+<p>The utility transfers documents to Google for the requested storage workflow. Drive sharing and institutional administrator access follow the destination's permissions and policies. The utility does not sell Google user data or use it for advertising.</p>
+<p>If the operator separately authorizes OpenAI's official Google Drive connection and requests document access in ChatGPT, document contents and metadata may be processed by OpenAI under that separate service's applicable terms, privacy policy, account controls, and institutional rules. This utility does not send its rclone OAuth credentials to ChatGPT. Disconnecting one authorization does not disconnect the other. This policy makes no promise about OpenAI retention or model-training settings.</p>
+<h2>Permitted use</h2>
+<p>The utility's use and transfer of information received from Google APIs must adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements. The operator is responsible for ensuring that the actual workflow complies before transferring data.</p>
+<h2>Retention, deletion, and requests</h2>
+<p>The operator controls local source files, credentials, and logs; the institution may control Drive retention and recovery. No automatic deletion period is promised. Stopping transfers or revoking access does not delete existing copies. Remove local and Drive copies separately, subject to institutional retention and backup rules. Any content already processed in ChatGPT must be managed separately through that service's controls.</p>
+<p>For privacy or deletion requests concerning this utility, contact the operator at <a href="mailto:porkface0301@gmail.com">porkface0301@gmail.com</a>. Institutional records or service-held copies may require a request to the institution or relevant provider.</p>
+<h2>Revoke access</h2>
+<p>Stop local scheduled transfers and revoke this application's authorization in <a href="https://myaccount.google.com/connections">Google Account connections</a>; remove stored rclone credentials securely. Manage the separate ChatGPT Google Drive connection independently. Existing local, Drive, and service-held copies are not automatically erased by revocation.</p>
+<h2>Website hosting</h2>
+<p>This website is hosted on GitHub Pages. This static site adds no analytics, advertising scripts, tracking cookies, or external embedded resources. GitHub Pages logs visitors' IP addresses for security; see <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages">GitHub Pages documentation</a> and the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. The website does not store research documents or OAuth credentials.</p>
+<h2>Changes</h2>
+<p>Update this policy before materially changing scopes or data handling. Update the effective date for later revisions.</p>
+<footer>Quantum CZ Research Sync · Operator: RatisWu</footer>
+</main></body></html>

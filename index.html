@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Home | Quantum CZ Research Sync</title><style>body{font:18px/1.7 system-ui,sans-serif;color:#172a37;background:#f5f7f8;margin:0}main{max-width:760px;margin:48px auto;padding:32px}h1{line-height:1.2}a{color:#126257}nav{display:flex;gap:24px;flex-wrap:wrap}aside{border-left:4px solid #bb7b16;padding:12px;background:#fff4de}footer{margin-top:48px;font-size:14px}</style></head>
+<body><main>
+<nav aria-label="Main navigation"><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
+<aside>This website describes the intended workflow. The deployed OAuth grants, Ubuntu configuration, institutional permissions, and separate ChatGPT connection have not been independently verified by this website review.</aside>
+<h1>Quantum CZ Research Sync</h1>
+<p>A personal research utility operated by RatisWu for transferring operator-approved research summaries from an operator-managed Ubuntu device to an institution-managed Google Drive account using rclone and the Google Drive API.</p>
+<h2>Purpose and access</h2>
+<p>This utility is for the operator's authorized research workflow and has no public registration. Upload approval is an operator responsibility; OAuth does not review whether a document is suitable for transfer.</p>
+<p>The intended Google OAuth scope is <code>https://www.googleapis.com/auth/drive.file</code>. It provides per-file access rather than access to all Drive content. In rclone, this normally limits visibility to files and folders created by rclone. Within that boundary, account permissions and the command used determine whether files can be read, updated, or deleted. This is not an upload-only permission.</p>
+<p>The destination and available operations depend on institutional account permissions and administrator policies. An institution-managed account's My Drive and a Google Workspace shared drive are different destinations; access to an existing folder is not guaranteed by this scope.</p>
+<h2>Separate ChatGPT connection</h2>
+<p>If the operator later asks ChatGPT to read or work with uploaded documents, that access uses OpenAI's official Google Drive connection, authorized separately. It does not use this utility's rclone credentials. Its permissions are independent of this utility's drive.file scope and depend on the connected account and administrator settings.</p>
+<h2>Informational website</h2>
+<p>This static site describes the utility. It has no Google sign-in form, upload form, or application database and does not receive research documents or OAuth credentials. It is intended for a separate GitHub Pages project repository.</p>
+<h2>Contact and policies</h2>
+<p>Operator: RatisWu · <a href="mailto:porkface0301@gmail.com">porkface0301@gmail.com</a></p>
+<p>See the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a>.</p>
+<footer>Quantum CZ Research Sync · Operator: RatisWu</footer>
+</main></body></html>
